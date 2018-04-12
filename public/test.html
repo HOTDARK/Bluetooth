@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<>
+获取教师所教课程<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/course" method="get">
+    学号<input type="number" name="trid"></br>
+    <input type="submit"/>
+</form>
+获取教师所教课程缺勤总列表<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/attendance" method="get">
+    学号<input type="number" name="trid"></br>
+    学号<input type="text" name="jxbID"></br>
+    <input type="submit"/>
+</form>
+
+获取所有班级列表<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/class" method="get">
+    学号<input type="number" name="trid"></br>
+    <input type="submit"/>
+</form>
+
+获取所有班级学生列表<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/classStudentAttendence" method="get">
+    学号<input type="number" name="trid"></br>
+    班级<input type="number" name="class"></br>
+    <input type="submit"/>
+</form>
+获取所有表<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/dataAll" method="get">
+    学号<input type="number" name="trid"></br>
+    班级<input type="number" name="class"></br>
+    <input type="submit"/>
+</form>获取所有学院编号<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/instituteAll" method="get">
+    学号<input type="number" name="trid"></br>
+    <input type="submit"/>
+
+</form><form action="http://localhost:8080/api/teacher/dataanalysis/instituteInfo" method="get">
+    学号<input type="number" name="trid"></br>
+    学院编号<input type="number" name="code"></br>
+    <input type="submit"/>
+</form>
+
+获取学校历年缺勤统计表<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/schoolYear" method="get">
+    学号<input type="number" name="trid"></br>
+    <input type="submit"/>
+</form><br>
+获取在校生的缺勤统计表<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/schoolGrade" method="get">
+    学号<input type="number" name="trid"></br>
+    <input type="submit"/>
+</form><br>
+获取类型缺勤统计表<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/schoolType" method="get">
+    学号<input type="number" name="trid"></br>
+    <input type="submit"/>
+</form><br>
+获取月份缺勤统计表<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/schoolMonth" method="get">
+    学号<input type="number" name="trid"></br>
+    <input type="submit"/>
+</form><br>
+获取学院缺勤排名<br>
+<form action="http://localhost:8080/api/teacher/dataanalysis/schoolInstitute" method="get">
+    学号<input type="number" name="trid"></br>
+    <input type="submit"/>
+</form><br>
+
+加载课表<br>
+<form action="http://localhost:8080/api/inputStudentCourse" method="poset">
+    学号<input type="number" name="stu_code"></br>
+    <input type="submit"/>
+</form><br>
+加载红岩课表<br>
+<form action="http://hongyan.cqupt.edu.cn/api/kebiao" method="post">
+    学号<input type="number" name="stuNum"></br>
+    学号<input type="number" name="week"></br>
+    <input type="submit"/>
+</form><br>
+</body>
+</html>

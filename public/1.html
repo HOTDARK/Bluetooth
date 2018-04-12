@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="javascript">
+        function fun(obj) {
+            if("没有老鼠的感觉真好" == obj.innerHTML){
+                obj.innerHTML="老鼠来了,赶紧跑啊";
+            }else{
+                obj.innerHTML="没有老鼠的感觉真好";
+            }
+
+        }
+    </script>
+</head>
+<body>
+<H1 onmousemove="fun(this)" onmouseout="fun(this)" >没有老鼠的感觉真好</H1>
+</body>
+
+<script type="javascript">
+    function fun(obj) {
+        if("没有老鼠的感觉真好" == obj.innerHTML){
+            obj.innerHTML="老鼠来了,赶紧跑啊";
+        }else{
+            obj.innerHTML="没有老鼠的感觉真好";
+        }
+    }
+</script>
+</html>
